@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather sounds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/dist/app.js" defer></script>
+</head>
+<body>
+    <main id="app" class="main">
+        <img data-image src="/assets/summer-bg.jpg" alt="Background" class="background">
+
+        <section class="container">
+            <h1 class="title">
+                Weather sounds
+            </h1>
+
+            <ul class="grid">
+                <li class="grid__item">
+                    <button data-toggle data-img="/assets/summer-bg.jpg" data-sound="/assets/sounds/summer.mp3" style="background-image: url('/assets/summer-bg.jpg')">
+                        <img src="/assets/icons/sun.svg" alt="">
+                    </button>
+                </li>
+                <li class="grid__item">
+                    <button data-toggle data-img="/assets/rainy-bg.jpg" data-sound="/assets/sounds/rain.mp3" style="background-image: url('/assets/rainy-bg.jpg')">
+                        <img src="/assets/icons/cloud-rain.svg" alt="">
+                    </button>
+                </li>
+                <li class="grid__item">
+                    <button data-toggle data-img="/assets/winter-bg.jpg" data-sound="/assets/sounds/winter.mp3" style="background-image: url('/assets/winter-bg.jpg')">
+                        <img src="/assets/icons/cloud-snow.svg" alt="">
+                    </button>
+                </li>
+            </ul>
+
+            <input data-range type="range" class="range" min="0" max="1" step="0.1" value="0.5">
+        </section>
+    </main>
+</body>
+</html>
